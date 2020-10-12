@@ -1,10 +1,10 @@
 .navbar-brand {
     img {
-        height: 30px;
+        height: $nav-logo-height;
     }
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
-    color: #0cd977;
+    color: $bool-color;
     text-decoration: underline;
 }

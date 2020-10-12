@@ -10899,6 +10899,11 @@ a.text-dark:focus {
   }
 }
 
+h4 {
+  display: inline-block;
+  font-weight: 700;
+}
+
 .navbar-brand img {
   height: 30px;
 }
@@ -10906,5 +10911,23 @@ a.text-dark:focus {
 .navbar-light .navbar-nav .active > .nav-link {
   color: #0cd977;
   text-decoration: underline;
+}
+
+.jumbotron {
+  background: none;
+}
+
+.jumbotron .jumbo-left h1 {
+  color: #0cd977;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.card img {
+  width: 150px;
+}
+
+.card .card-body small {
+  margin-left: 10px;
 }
 

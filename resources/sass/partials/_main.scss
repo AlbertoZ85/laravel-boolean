@@ -1,0 +1,23 @@
+.jumbotron {
+    background: none;
+
+    .jumbo-left {
+        h1 {
+            color: $bool-color;
+            font-size: $h1-fs;
+            font-weight: $bold;
+        }
+    }
+}
+
+.card {
+    img {
+        width: 150px;
+    }
+
+    .card-body {
+        small {
+            margin-left: 10px;
+        }
+    }
+}
