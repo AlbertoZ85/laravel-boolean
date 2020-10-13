@@ -3,16 +3,15 @@
 
 @section('content')
 <div class="card-group">
-    @foreach ($data as $student)        
-        <div class="card">
+    @foreach ($data as $key => $student)        
+        <div class="card card-az">
             <img src="{{$student['img']}}" class="card-img-top rounded mx-auto" alt="{{$student['nome']}}">
-            <div class="card-body">
-                <h4 class="card-title">{{$student['nome']}}</h4>
+            <div class="card-body text-center">
+                <a href="{{route('Student.show',['id' => $key])}}"><h4 class="card-title">{{$student['nome']}}</h4></a>
                 <small class="text-muted">{{$student['anni']}} anni</small>
-                <p class="card-text">{{$student['descrizione']}}</p>
             </div>
-            <div class="card-footer">
-                <small class="text-muted">Assunto da {{$student['azienda']}}</small>
+            <div class="card-footer text-center">
+                <small class="text-muted">Assunt{{$student['genere'] == 'f' ? 'a' : 'o'}} da {{$student['azienda']}}</small>
             </div>
         </div>
     @endforeach
